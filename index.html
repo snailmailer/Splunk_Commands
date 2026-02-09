@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splunk Commands Reference Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🔍 Splunk Commands Reference</h1>
+                <p class="subtitle">Comprehensive guide to Splunk SPL commands with examples and formulas</p>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search commands..." class="search-input">
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Commands</button>
+            <button class="filter-btn" data-category="search">Search</button>
+            <button class="filter-btn" data-category="statistical">Statistical</button>
+            <button class="filter-btn" data-category="reporting">Reporting</button>
+            <button class="filter-btn" data-category="transforming">Transforming</button>
+            <button class="filter-btn" data-category="field">Field Extraction</button>
+            <button class="filter-btn" data-category="time">Time-Based</button>
+        </div>
+
+        <div id="commandsContainer" class="commands-grid"></div>
+    </div>
+
+    <script src="commands-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
